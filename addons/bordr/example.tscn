@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://cohu8rglwiyck"]
+
+[ext_resource type="PackedScene" uid="uid://dewruilf8icmd" path="res://addons/bordr/bordr.tscn" id="1_myq5t"]
+[ext_resource type="Texture2D" uid="uid://cqs1ehfay6fhs" path="res://addons/bordr/icon.png" id="2_1yury"]
+
+[node name="Example" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.157274, 0.157274, 0.157274, 1)
+
+[node name="BorDR" parent="." instance=ExtResource("1_myq5t")]
+layout_mode = 1
+offset_bottom = 46.0
+color = Color(0, 0, 0, 0.690196)
+window_name = "BorDR: Example"
+icon = ExtResource("2_1yury")
+dragobj_color = Color(0, 0, 0, 0.690196)
+
+[node name="Text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.0
+offset_top = -50.0
+offset_right = 137.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "BorDR simple example!
+Instanciate with borderless.
+Make sure to select the node's size."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Text2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = 74.0
+offset_right = 142.0
+offset_bottom = 175.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "You can use transparent 
+windows to make better looks!"
+horizontal_alignment = 1
+vertical_alignment = 1
